@@ -97,4 +97,4 @@ if c >= a and c > b and c > d and c > e:
     if  e > b and e >= d and e>a:
         print(f"Второе наибольшее число x//y: {e}")
 
-print((a, b, c, d, e)
+print(a, b, c, d, e)
