@@ -88,7 +88,7 @@ if e > a and e > b and e > c and e >= d:
 
 if c >= a and c > b and c > d and c > e:
 
-    if a > b and a > d and a > e and a>c:
+    if a > b and a > d and a > e:
         print(f"Второе наибольшее число x+y: {a}")
     if b > a and b > d and b > e:
         print(f"Второе наибольшее число x-y: {b}")
