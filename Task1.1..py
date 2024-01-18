@@ -15,90 +15,47 @@ print("Введите число x:")
 x=float(input())
 print("Введите число y:")
 y=float(input())
-a=x+y
-b=x-y
-c=x*y
-d=x/y
-e=x//y
-if a>=b and a>=c and a>=d and a>=e:
-    print(f"Наибольшее число x+y: {a}")
-if b>=a and b>=c and b>=d and b>=e:
-    print(f"Наибольшее число x-y: {b}")
-if d>=a and d>=b and d>=c and d>=e:
-    print(f"Наибольшее число x/y: {d}")
-if e>=a and e>=b and e>=c and e>=d:
-    print(f"Наибольшее число x//y: {e}")
-if c>=a and c>=b and c>=d and c>=e:
-    print(f"Наибольшее число x*y: {c}")
-print()
+n1, n2, n3, n4, n5=x+y, x-y, x*y, x/y, x//y
+m=n1
+if n2>=m:m=n2
+if n3>=m:m=n3
+if n4>=m:m=n4
+if n5>=m:m=n5
+print(m)
 
 #Task 1.3 Ввести два числа x и y. Напечатать второе по величине из чисел x+y,x-y,x*y,x/y,x//y
-print("Ввести два числа x и y. Напечатать второе по величине из чисел x+y,x-y,x*y,x/y,x//y")
+
+print("Ввести два числа x и y. Напечатать наибольшее из чисел x+y,x-y,x*y,x/y,x//y")
 print("Введите число x:")
-x = float(input())
+x=float(input())
 print("Введите число y:")
-y = float(input())
-a = x + y
-b = x - y
-c = x * y
-d = x / y
-e = x // y
-if a > b and a > c and a > d and a > e:
+y=float(input())
+n1, n2, n3, n4, n5=x+y, x-y, x*y, x/y, x//y
 
-    if b > c and b > d and b > e:
-        print(f"Второе наибольшее число x-y: {b}")
-    if d > b and d > c and d >= e:
-        print(f"Второе наибольшее число x/y: {d}")
-    if e > b and e > c and e >= d:
-        print(f"Второе наибольшее число x//y: {e}")
-    if c > b and c > d and c > e:
-        print(f"Второе наибольшее число x*y: {c}")
+if n1>= n2:
+    m1=n1
+    m2=n2
+else:
+    m1=n2
+    m2=n2
 
-if b > a and b > c and b > d and b > e:
+if n3>=m1:
+    m2=m1
+    m1=n3
+elif n3>=m2:
+    m2=n3
+if n4>=m1:
+    m2=m1
+    m1=n4
+elif n4>=m2:
+    m2=n4
+if n5>=m1:
+    m2=m1
+    m1=n5
+elif n5>=m2:
+    m2=n5
 
-    if a > c and a > d and a > e:
-        print(f"Второе наибольшее число x+y: {a}")
-    if d > a and d >= c and d >= e:
-        print(f"Второе наибольшее число x/y: {d}")
-    if e > a and e >= c and e >= d:
-        print(f"Второе наибольшее число x//y: {e}")
-    if c > a and c >= d and c >= e:
-        print(f"Второе наибольшее число x*y: {c}")
-
-if d > a and d > b and d > c and d >= e:
-
-    if a > b and a > c and a > e:
-        print(f"Второе наибольшее число x+y: {a}")
-    if b > a and b > c and b > e:
-        print(f"Второе наибольшее число x-y: {b}")
-    if e > a and e > b and e > c and e < d:
-        print(f"Второе наибольшее число x//y: {e}")
-    if c > a and c > b and c > e:
-        print(f"Второе наибольшее число x*y: {c}")
-
-if e > a and e > b and e > c and e >= d:
-
-    if a > b and a > c:
-        print(f"Второе наибольшее число x+y: {a}")
-    if b > a and b > c:
-        print(f"Второе наибольшее число x-y: {b}")
-    if d > a and d > b and d > c and d > e:
-        print(f"Второе наибольшее число x/y: {d}")
-    if c > a and c > b:
-        print(f"Второе наибольшее число x*y: {c}")
-
-if c >= a and c > b and c > d and c > e:
-
-    if a > b and a > d and a > e and a>c:
-        print(f"Второе наибольшее число x+y: {a}")
-    if b > a and b > d and b > e:
-        print(f"Второе наибольшее число x-y: {b}")
-    if d > b and d >= e:
-        print(f"Второе наибольшее число x/y: {d}")
-    if  e > b and e >= d:
-        print(f"Второе наибольшее число x//y: {e}")
-
-print(a,- b,- c,- d,- e)
+print(m1, m2)ащк шт
 
 
 
