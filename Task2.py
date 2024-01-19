@@ -4,7 +4,7 @@ n=1
 m=int(input("Введите число n: "))
 for n in range(9):
     n = (n + 1) * m
-    print(f"{p}x{m}={n}")
+    print(f"{p}x{m}={n:2}")
     p=p+1
 
 
