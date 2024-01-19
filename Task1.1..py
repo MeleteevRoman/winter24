@@ -55,7 +55,7 @@ if n5>=m1:
 elif n5>=m2:
     m2=n5
 
-print(m1, m2)ащк шт
+print(m1, m2)
 
 
 
