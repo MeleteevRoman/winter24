@@ -44,7 +44,7 @@ for i in range(len(a)):
     b_5=a.count("5")
     b_6=a.count("6")
     b_7=a.count("7")
-    b_8=a.count("9")
+    b_8=a.count("8")
     b_9=a.count("9")
 print(f"0-{b_0}")
 print(f"1-{b_1}")
