@@ -1,5 +1,6 @@
 # Задание 12-1
-x=list(input('Введите список чисел: '))
+x=input('Введите список чисел: ')
+x=x.replace(' ','')
 print(x)
 max_num=max(x)
 min_num=min(x)
