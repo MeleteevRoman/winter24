@@ -23,3 +23,8 @@ for w in s:
     for i in range(w):
         res.append(w)
 print(res)
+
+#Задание12-3
+s = "1-2,4-4,3-6"
+lst=[i for r in (list(map(int, q.split('-')))for q in s.split(",")) for i in range(r[0], r[-1]+1)]
+print(lst)
