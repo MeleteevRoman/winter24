@@ -1,9 +1,9 @@
 # Задание 12-1
-x=input('Введите список чисел: ')
-x=x.replace(' ','')
-print(x)
+x = list(map(int, input('Введите список чисел: ').split()))
 max_num=max(x)
 min_num=min(x)
+#print(min_num)
+print(x)
 max_ind=[index for index, i in  enumerate(x) if i==max_num]
 min_ind=[index for index, i in  enumerate(x) if i==min_num]
 print(f' Минимальное число списка:{min_num}\n',
