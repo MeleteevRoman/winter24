@@ -1,7 +1,7 @@
 #Задание 15-2
 import re
 string=input("Введите номера машин:")
-regex=r'\b[EЕ,AА,TТ,YУ,OО,PР,HН,KК,XХ,CС,BВ,MМ]\d\d\d[EЕ,AА,TТ,YУ,OО,PР,HН,KК,XХ,CС,BВ,MМ]{2}[178]{3}|[EЕ,AА,TТ,YУ,OО,PР,HН,KК,XХ,CС,BВ,MМ]\d\d\d[EЕ,AА,TТ,YУ,OО,PР,HН,KК,XХ,CС,BВ,MМ]{2}[78]{2}\b'
+regex=r'\b[EЕ,AА,TТ,YУ,OО,PР,HН,KК,XХ,CС,BВ,MМ]\d\d\d[EЕ,AА,TТ,YУ,OО,PР,HН,KК,XХ,CС,BВ,MМ]{2}[1][7][8]|[EЕ,AА,TТ,YУ,OО,PР,HН,KК,XХ,CС,BВ,MМ]\d\d\d[EЕ,AА,TТ,YУ,OО,PР,HН,KК,XХ,CС,BВ,MМ]{2}[7][8]\b'
 print(re.findall(regex,string))
 
 #Задание 15-3
