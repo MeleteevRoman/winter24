@@ -8,8 +8,9 @@ for i in range(len(s)):
             break
         elif s[i:j] == s[i:j][::-1]:
             m = s[i:j]
-            for x in range (len(m)):
-                x+=1
+            x=len(m)
+            # for x in range (len(m)):
+            #     x+=1
 
 print(f'Длиной подстроки с наибольшим палиндромом является {x}(подстрока "{m}")')
 
