@@ -12,6 +12,8 @@ for i in range(len(s)):
                 x+=1
 
 print(f'Длиной подстроки с наибольшим палиндромом является {x}(подстрока "{m}")')
+
+
 #Задание23-2
 import psycopg2
 import pandas as pd
@@ -34,8 +36,11 @@ df = pd.DataFrame(d, columns=['book_id', 'title','author','price','amount','tota
 print(df)
 
 con.close()
+
+
 #Задание23-3
 import itertools
+
 lst = input('Введите список чисел: ').split()
 
 res = int(max((''.join(i) for i in itertools.permutations(str(i)
