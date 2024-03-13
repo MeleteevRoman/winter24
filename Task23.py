@@ -27,7 +27,6 @@ cur.execute('''SELECT * FROM book
 ORDER BY book_id''')
 rows=cur.fetchall()
 
-
 d=[]
 for  row in rows:
     d.append(row)
