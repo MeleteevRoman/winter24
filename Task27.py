@@ -12,3 +12,25 @@ def dartboard(n):
 
 
 print(*dartboard(int(input("Введите число: "))),sep="\n")
+
+#Задание27-3
+
+# a = [[1,2,3],[4,5,6],[7,8,9],[7,8,111]]
+a=[1,2,[3,4,[5]]]
+# a=['x','y',['z']]
+# a=[1,2,3]
+#a=[]
+
+count=0
+for i in a:
+    if type(i)==list:
+        count+=1
+
+        for j in  i:
+            count+=1
+
+            if type(j)==list:
+                count+=1
+    else :count+=1
+
+print(count)
