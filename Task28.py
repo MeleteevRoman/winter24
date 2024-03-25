@@ -14,16 +14,16 @@ n = len(a)
 print("Число инверсий: ",Inv(a, n))
 
 #Задание28-3
-def TowerOfHanoi(n, x, y, z):
+def Hanoi(n, x, y, z):
     if n == 1:
         print("Перемещаем диск 1 со стержня", x, "на стержень", y)
         return
-    TowerOfHanoi(n - 1, x, z, y, )
+    Hanoi(n - 1, x, z, y, )
     print("Перемещаем диск", n, "со стержня", x, "на стержень", y)
-    TowerOfHanoi(n - 1, z, y, x)
+    Hanoi(n - 1, z, y, x)
 
 
 n = 4
 
-TowerOfHanoi(n, 'A', 'B', 'C')
+Hanoi(n, 'A', 'B', 'C')
 print(2 ** n - 1)
